@@ -1,15 +1,18 @@
-import { useState } from 'react'
 import "./data/places.json"
 import './App.css'
 import SignUp from './pages/SignUp'
+import Navbar from "./component/Navbar"
+import Banner from "./component/Banner"
+import { Router,Route,Routes } from "react-router-dom"
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>
       <SignUp/>
       <Footer/>
+      <Navbar/>
+      <Banner/>
     </>
   )
 }
