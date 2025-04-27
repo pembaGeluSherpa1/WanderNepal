@@ -1,0 +1,72 @@
+/* Reset some basic stuff */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 30px;
+    color: black;
+}
+
+.navbar-logo a {
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+}
+
+.navbar-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar-links li a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+}
+
+.navbar-search input {
+    padding: 8px 12px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
+
+.navbar-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.signin-btn,
+.signup-btn {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.signin-btn {
+    background-color: #007bff;
+    color: white;
+}
+
+.signup-btn {
+    background-color: #28a745;
+    color: white;
+}
+
+.signin-btn:hover {
+    background-color: #0056b3;
+}
+
+.signup-btn:hover {
+    background-color: #1e7e34;
+}
