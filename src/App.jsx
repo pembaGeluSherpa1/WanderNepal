@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import "./data/places.json"
 import './App.css'
 import Login from './Pages/Login'
 
