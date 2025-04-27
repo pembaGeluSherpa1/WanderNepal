@@ -13,9 +13,9 @@ function SignUp(){
 
        <form className="SignUpForm" action="">
 
-       <h1 id="SignUphH1">Create an Account</h1>
+       <h1 > Create an Account</h1>
         
-        <p id="SignUpP">Create an account to get started</p>
+        <p id="SignUpP"> Create an account to get started</p>
         
 
         <div className="form-group">
@@ -54,8 +54,7 @@ function SignUp(){
            <div className="signUpBtn">
            <button type="button" className="apple-btn"> <span id="signUpLogo"><DiApple /></span>Continue with Apple</button>
            <button type="button" className ="google-btn"> <span id="signUpLogo"><FaGoogle /></span>Continue with Google</button>
-           <button type="button" className ="facebook-btn">
-             <span id="signUpLogo"><FaFacebook /></span>Continue with Facebook</button>
+           <button type="button" className ="facebook-btn"><span id="signUpLogo"><FaFacebook /></span>Continue with Facebook</button>
          </div>
 
 
