@@ -8,6 +8,7 @@ function SignUp(){
     <div className="signupbgimg">
        <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.istockphoto.com%2Fphotos%2Fstreet-in-bhaktapur&psig=AOvVaw2LCPJrGIgWq8HNFziWcr4W&ust=1745829816506000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCLiu6pfp94wDFQAAAAAdAAAAABAJ" alt="image"/>
     </div>
+
       <div className="signup-container">
 
        <form className="SignUpForm" action="">

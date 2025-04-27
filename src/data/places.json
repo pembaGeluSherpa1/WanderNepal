@@ -13,45 +13,11 @@
             "image": "<img src='https://images.squarespace-cdn.com/...jpg' alt='Boudhanath image'>"
         },
         {
-            "id": 2,
-            "placeName": "Pashupatinath Temple",
-            "description": "A sacred Hindu temple dedicated to Lord Shiva, located on the banks of the Bagmati River. It is also a UNESCO World Heritage Site.",
-            "foreignNation": 1000,
-            "saarcNational": 1000,
-            "chinese": 1000,
-            "nepalese": 0,
-            "contactNumber": "01-4256909",
-            "map": "<iframe src='https://www.google.com/maps/embed?...'></iframe>"
-        },
-        {
-            "id": 3,
-            "placeName": "Swayambhunath Stupa (Monkey Temple)",
-            "description": "An ancient religious complex atop a hill in the Kathmandu Valley, offering panoramic views of the city. It is revered by both Buddhists and Hindus.",
-            "foreignNation": 200,
-            "saarcNational": 50,
-            "chinese": 200,
-            "nepalese": 0,
-            "contactNumber": "01-4272595",
-            "map": "<iframe src='https://www.google.com/maps/embed?...'></iframe>"
-        },
-        {
-            "id": 4,
-            "placeName": "Kathmandu Durbar Square",
-            "description": "The historic heart of Kathmandu city, full of ancient palaces, courtyards, and temples. It is a UNESCO World Heritage Site.",
-            "foreignNation": 1000,
-            "saarcNational": 150,
-            "chinese": 1000,
-            "nepalese": 0,
-            "contactNumber": "01-4268969",
-            "map": "<iframe src='https://www.google.com/maps/embed?...'></iframe>"
-        },
-        {
-            "id": 5,
-            "placeName": "Patan Durbar Square",
-            "description": "A masterpiece of Newar architecture, the square houses beautiful temples, a palace, and a museum. It is a UNESCO World Heritage Site.",
-            "foreignNation": 1000,
-            "saarcNational": 250,
-            "chinese": 1000,
+            "id" : 1 ,
+            "placeName" : "Swombhunath",
+            "foreignNation": 400,
+            "saarcNational": 100,
+            "chinese": 400,
             "nepalese": 0,
             "contactNumber": "01-5520102",
             "map": "<iframe src='https://www.google.com/maps/embed?...'></iframe>"
