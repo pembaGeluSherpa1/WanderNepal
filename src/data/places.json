@@ -8,15 +8,44 @@
             "chinese": 400,
             "nepalese": 0,
             "contactNumber": "01-5368969",
-            "map": "<iframe src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3531.800470768043!2d85.35978552736114!3d27.7210217760279!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb1bda4a951f0f%3A0x3ddabb234891c3bd!2sBoudhanath%20Stupa!5e0!3m2!1sen!2snp!4v1745721120821!5m2!1sen!2snp' width='600' height='450' style='border:0;' allowfullscreen='' loading='lazy' referrerpolicy='no-referrer-when-downgrade'></iframe>",
-            "image": "<img src='https://www.google.com/imgres?q=boudha&imgurl=https%3A%2F%2Fimages.squarespace-cdn.com%2Fcontent%2Fv1%2F5b735348266c075124b0ffb3%2F1568373828844-AP1ZPOIWBGGFJWMIZ55N%2FBoudha_Stupa_181030-9.jpg&imgrefurl=https%3A%2F%2Fwww.nekhor.org%2Fpadmasambhava%2Fnepal%2Fboudha&docid=QMQtN73Qz4werM&tbnid=hCWvjb2VnREKLM&vet=12ahUKEwikjZjfrfeMAxVd4zgGHR6-M08QM3oECBYQAA..i&w=2500&h=1667&hcb=2&ved=2ahUKEwikjZjfrfeMAxVd4zgGHR6-M08QM3oECBYQAA' alt='Boudhanath image'>"
+            "map": "<iframe src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3531.800470768043!2d85.35978552736114!3d27.7210217760279!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb1bda4a951f0f%3A0x3ddabb234891c3bd!2sBoudhanath%20Stupa!5e0!3m2!1sen!2snp!4v1745721120821!5m2!1sen!2snp' width='600' height='450' style='border:0;' allowfullscreen='' loading='lazy' referrerpolicy='no-referrer-when-downgrade'></iframe>"
         },
         {
-            "id" : 1 ,
-            "placeName" : "Swombhunath",
-            "foreignNation": 400,
-            "saarcNational": 100,
-            "chinese": 400,
+            "id": 2,
+            "placeName": "Pashupatinath Temple",
+            "foreignNation": 1000,
+            "saarcNational": 1000,
+            "chinese": 1000,
+            "nepalese": 0,
+            "contactNumber": "01-4256909",
+            "map": "<iframe src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3532.340145668027!2d85.34670717528823!3d27.7104491247255!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb19961b2e6b41%3A0xa5bb529d5900eefb!2sPashupatinath%20Temple!5e0!3m2!1sen!2snp!4v1745721942608!5m2!1sen!2snp' width='600' height='450' style='border:0;' allowfullscreen='' loading='lazy' referrerpolicy='no-referrer-when-downgrade'></iframe>"
+        },
+        {
+            "id": 3,
+            "placeName": "Swayambhunath Stupa (Monkey Temple)",
+            "foreignNation": 200,
+            "saarcNational": 50,
+            "chinese": 200,
+            "nepalese": 0,
+            "contactNumber": "01-4272595",
+            "map": "<iframe src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3532.0609176127764!2d85.28969747528848!3d27.71575722442159!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb18fc70c07f1d%3A0x740a2f5ea18284d7!2sSwayambhunath!5e0!3m2!1sen!2snp!4v1745721998563!5m2!1sen!2snp' width='600' height='450' style='border:0;' allowfullscreen='' loading='lazy' referrerpolicy='no-referrer-when-downgrade'></iframe>"
+        },
+        {
+            "id": 4,
+            "placeName": "Kathmandu Durbar Square",
+            "foreignNation": 1000,
+            "saarcNational": 150,
+            "chinese": 1000,
+            "nepalese": 0,
+            "contactNumber": "01-4268969",
+            "map": "<iframe src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3531.4289357314887!2d85.30666507528909!3d27.704991126340158!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb18fd94f0cdb7%3A0x2c35f2d08f771cc0!2sKathmandu%20Durbar%20Square!5e0!3m2!1sen!2snp!4v1745722092103!5m2!1sen!2snp' width='600' height='450' style='border:0;' allowfullscreen='' loading='lazy' referrerpolicy='no-referrer-when-downgrade'></iframe>"
+        },
+        {
+            "id": 5,
+            "placeName": "Patan Durbar Square",
+            "foreignNation": 1000,
+            "saarcNational": 250,
+            "chinese": 1000,
             "nepalese": 0,
             "contactNumber": "01-5520102",
             "map": "<iframe src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3533.5299055906065!2d85.31490507528723!3d27.667488029848236!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb199ffea9e1b1%3A0xf2850d7d7c2b8b9a!2sPatan%20Durbar%20Square!5e0!3m2!1sen!2snp!4v1745722150648!5m2!1sen!2snp' width='600' height='450' style='border:0;' allowfullscreen='' loading='lazy' referrerpolicy='no-referrer-when-downgrade'></iframe>"
