@@ -8,13 +8,14 @@ function SignUp(){
     <div className="signupbgimg">
        <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.istockphoto.com%2Fphotos%2Fstreet-in-bhaktapur&psig=AOvVaw2LCPJrGIgWq8HNFziWcr4W&ust=1745829816506000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCLiu6pfp94wDFQAAAAAdAAAAABAJ" alt="image"/>
     </div>
+
       <div className="signup-container">
 
        <form className="SignUpForm" action="">
 
-       <h1 id="SignUphH1">Create an Account</h1>
+       <h1 > Create an Account</h1>
         
-        <p id="SignUpP">Create an account to get started</p>
+        <p id="SignUpP"> Create an account to get started</p>
         
 
         <div className="form-group">
@@ -53,8 +54,7 @@ function SignUp(){
            <div className="signUpBtn">
            <button type="button" className="apple-btn"> <span id="signUpLogo"><DiApple /></span>Continue with Apple</button>
            <button type="button" className ="google-btn"> <span id="signUpLogo"><FaGoogle /></span>Continue with Google</button>
-           <button type="button" className ="facebook-btn">
-             <span id="signUpLogo"><FaFacebook /></span>Continue with Facebook</button>
+           <button type="button" className ="facebook-btn"><span id="signUpLogo"><FaFacebook /></span>Continue with Facebook</button>
          </div>
 
 
