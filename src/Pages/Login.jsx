@@ -26,13 +26,12 @@ function Login(){
                     <p>Don't remember password?<a href="#">Forgot Password</a></p>
                 </div>
 
-            
-            <div className="signn">
+                <div className="signn">
                 <p>Need to create an account?<a href="#">Sign-up</a></p>
-            </div>
-
+                </div>
             </form>
         </div>
+
         </>
     )
 }
