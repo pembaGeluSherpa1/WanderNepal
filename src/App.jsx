@@ -5,6 +5,7 @@ import VisitList from './component/VisitList'
 import Testimonial from './component/Testimonial'
 import Navbar from "./component/Navbar"
 import Banner from "./component/Banner"
+import SignUp from './pages/SignUp'
 
 function App() {
 
@@ -15,6 +16,9 @@ function App() {
       <Testimonial/>
       <Navbar/>
       <Banner/>
+      <SignUp/>
+      <Footer/>
+
     </>
   )
 }
