@@ -1,11 +1,12 @@
 import "./data/places.json"
 import './App.css'
-import Login from '../pages/Login'
+import Login from './Pages/Login'
 import VisitList from './component/VisitList'
 import Testimonial from './component/Testimonial'
 import Navbar from "./component/Navbar"
 import Banner from "./component/Banner"
-import SignUp from './pages/SignUp'
+import SignUp from './Pages/SignUp'
+import Footer from './component/Footer'
 
 function App() {
 

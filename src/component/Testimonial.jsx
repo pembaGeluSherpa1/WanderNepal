@@ -16,9 +16,9 @@ export default function Testimonial(){
             <p>This is our project which will be the winner and win 10k rupees and do party with that money waaaaaaauuuuu.</p>
         
         <div className="Testimonial-people">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6Aqj3MTDX2_ntWQ32h0U8zmQSyovlsOJlew&s" alt="person"/>
-             <p>Cheng Wu Kang</p>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6Aqj3MTDX2_ntWQ32h0U8zmQSyovlsOJlew&s" alt="person"/>    
         </div>
+        <h3>Cheng Wu Kang</h3>
         </div>
         </>
     )
