@@ -1,6 +1,6 @@
 import "./data/places.json"
 import './App.css'
-import Login from './Pages/Login'
+import Login from '../pages/Login'
 import VisitList from './component/VisitList'
 import Testimonial from './component/Testimonial'
 import Navbar from "./component/Navbar"
@@ -17,7 +17,7 @@ function App() {
       <Navbar/>
       <Banner/>
       <SignUp/>
-      
+
       <Footer/>
 
     </>
