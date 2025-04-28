@@ -12,10 +12,10 @@ function App() {
     <>
       <SignUp/>
       <Footer/>
+
       <Navbar/>
       <Banner/>
-      <SignUp/>
-      <Footer/>
+
     </>
   )
 }
