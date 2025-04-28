@@ -1,72 +1,159 @@
-/* Reset some basic stuff */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Navbar */
 nav.navbar {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
+    position:fixed;
+    width: 100%;
     padding: 15px 30px;
-    color: black;
+    background-color: rgb(248, 249, 250);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .navbar-logo a {
-    font-size: 24px;
+    font-size: 28px;
     font-weight: bold;
     text-decoration: none;
-    color: black;
+    color: rgb(0, 51, 255);
 }
 
+/* Navbar Links */
 .navbar-links {
     list-style: none;
     display: flex;
-    gap: 20px;
+    gap: 25px;
 }
 
 .navbar-links li a {
     text-decoration: none;
-    color: black;
+    color: rgb(51, 51, 51);
     font-size: 18px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.navbar-links li a:hover {
+    color: rgb(0, 123, 255);
 }
 
 .navbar-search input {
-    padding: 8px 12px;
-    border-radius: 5px;
-    border: none;
+    padding: 8px 14px;
+    border-radius: 20px;
+    border: 1px solid rgb(204, 204, 204);
     outline: none;
+    width: 200px;
+    transition: all 0.3s ease;
+}
+
+.navbar-search input:focus {
+    border-color: rgb(0, 123, 255);
+    width: 250px;
 }
 
 .navbar-buttons {
     display: flex;
-    gap: 10px;
+    gap: 12px;
 }
 
 .signin-btn,
 .signup-btn {
-    padding: 8px 16px;
+    padding: 8px 20px;
     border: none;
-    border-radius: 5px;
+    border-radius: 20px;
     cursor: pointer;
     font-weight: bold;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
 }
 
 .signin-btn {
-    background-color: #007bff;
-    color: white;
+    background-color: rgb(0, 123, 255);
+    color: rgb(255, 255, 255);
 }
 
 .signup-btn {
-    background-color: #28a745;
-    color: white;
+    background-color: rgb(40, 167, 69);
+    color: rgb(255, 255, 255);
 }
 
 .signin-btn:hover {
-    background-color: #0056b3;
+    background-color: rgb(0, 86, 179);
 }
 
 .signup-btn:hover {
-    background-color: #1e7e34;
+    background-color: rgb(30, 126, 52);
+}
+
+/* Profile Icon */
+.profile-menu {
+    position: relative;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.profile-icon {
+    color: rgb(0, 123, 255);
+    transition: transform 0.2s ease;
+}
+
+.profile-icon:hover {
+    transform: scale(1.1);
+}
+
+/* Dropdown */
+.dropdown {
+    position: absolute;
+    top: 40px;
+    right: 0;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(221, 221, 221);
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    min-width: 160px;
+    z-index: 100;
+}
+
+.dropdown a {
+    padding: 10px 15px;
+    text-decoration: none;
+    color: rgb(51, 51, 51);
+    font-size: 16px;
+    transition: background-color 0.2s;
+}
+
+.dropdown a:hover {
+    background-color: rgb(241, 241, 241);
+}
+
+/* Mobile Responsive */
+@media screen and (max-width: 768px) {
+    nav.navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .navbar-links {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .navbar-search input {
+        width: 100%;
+    }
+
+    .navbar-buttons {
+        width: 100%;
+        justify-content: space-around;
+    }
 }
