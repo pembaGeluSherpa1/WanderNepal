@@ -4,6 +4,7 @@ import { CiLock , CiMail} from "react-icons/ci";
 function Login(){
     return(
         <>
+        
         <img src="https://img.freepik.com/free-photo/vertical-shot-lochawa-la-khang-monastery-kalpa-himachal-pradesh-cold-winter_181624-23562.jpg?semt=ais_hybrid&w=740" alt="Background" id="Background-img"/>
         <div className="Login-container">
             <form action="">
@@ -33,6 +34,7 @@ function Login(){
 
             </form>
         </div>
+
         </>
     )
 }
