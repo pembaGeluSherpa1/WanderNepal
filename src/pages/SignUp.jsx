@@ -5,9 +5,8 @@ function SignUp(){
     return (
         <>
       
-    <div className="signupbgimg">
-       <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.istockphoto.com%2Fphotos%2Fstreet-in-bhaktapur&psig=AOvVaw2LCPJrGIgWq8HNFziWcr4W&ust=1745829816506000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCLiu6pfp94wDFQAAAAAdAAAAABAJ" alt="image"/>
-    </div>
+       <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5ywSSrzNkOe3PwSNi6JZ7FTR4Kh-r_nQaow&s" alt="image" id="backgroundimg"/>
+    
 
       <div className="signup-container">
 
