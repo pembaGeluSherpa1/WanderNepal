@@ -32,7 +32,7 @@ li {
     align-items: flex-start;
     width: 100%;
     text-align: justify;
-
+    margin-top:80px;
 }
 .footer-about ul li {
     margin-bottom: 15px;
