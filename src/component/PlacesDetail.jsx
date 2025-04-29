@@ -27,7 +27,6 @@ const PlaceDetail = () => {
         allowFullScreen=""
         loading="lazy"
         referrerPolicy="no-referrer-when-downgrade"
-        // title={`Map of ${place.placeName}`}
       />
     </div>
   );
