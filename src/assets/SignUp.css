@@ -1,116 +1,142 @@
-* {
-    margin: 0;
-    padding: 0;
-
-}
-
-#backgroundimg {
+.auth-page {
+    display: flex;
+    min-height: 100vh;
+    background: rgb(240, 244, 248);
+    font-family: Arial, sans-serif;
+  }
+  
+  .left-side {
+    flex: 1.5;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background: rgb(240, 244, 248);
+  }
+  
+  .background-img {
     width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* position:; */
+  }
+  
+  .overlay-content {
     position: absolute;
-    height: 100vh;
-
-}
-
-.signup-container {
+    color: white;
+    text-align:center;
+    /* background: rgba(0, 0, 0, 0.3); */
+    padding: 20px;
+    /* border-radius: 8px; */
+  }
+  
+  .right-side {
+    flex: 1;
     display: flex;
     justify-content: center;
     align-items: center;
+    background: rgb(255, 255, 255);
+    padding: 40px;
+  }
+  
+  form {
     width: 100%;
-    height: 100vh;
-}
-
-.SignUpForm {
-    height: auto;
-    width: 400px;
-    padding: 50px;
-    background: #ffff;
-    border-radius: 16px;
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    max-width: 360px;
+  }
+  
+  form h1 {
     text-align: center;
-}
-
-#SignUpP {
-    margin-top: 10px;
-    margin-bottom: 40px;
-}
-
-
-.input {
-    margin: 15px;
-    margin-left: 0%;
-
-}
-
-#email,
-#password2,
-#password1 {
-    padding: 10px;
-    width: 100%;
-
-}
-
-.checkbox {
+    color: rgb(70, 53, 220);
+    margin-bottom: 10px;
+  }
+  
+  form p {
+    text-align: center;
+    font-size: 14px;
+    color: rgb(85, 85, 85);
+    margin-bottom: 20px;
+  }
+  
+  form p a {
+    color: rgb(13, 110, 253);
+    text-decoration: none;
+  }
+  
+  form p a:hover {
+    color: rgb(242, 8, 71);
+    text-decoration: underline;
+  }
+  
+  .input-group {
     display: flex;
-    align-items: center;
-    margin: 15px;
-    font-size: 0.9rem;
-}
-
-.checkbox input {
-    margin-right: 10px;
-}
-
-.btn {
-    padding: 10px;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .input-group input, .input-single input {
     width: 100%;
-    border-radius: 6px;
-    background-color: rgb(214, 31, 31);
+    padding: 10px;
+    border: 1px solid rgb(204, 204, 204);
+    border-radius: 5px;
+    outline: none;
+  }
+  
+  .input-single {
+    margin-bottom: 20px;
+  }
+  
+  .checkbox-group {
+    font-size: 13px;
+    color: rgb(85, 85, 85);
+    margin-bottom: 20px;
+  }
+  
+  button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: rgb(13, 110, 253);
+    border: none;
     color: white;
-
-
-}
-
-#signUpLogo {
-    margin-right: 20px;
-}
-
-#signUpOr {
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    transition: 400ms all ease-in-out;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: rgb(52, 28, 147);
+  }
+  
+  .divider {
+    text-align: center;
+    font-size: 14px;
+    color: rgb(85, 85, 85);
+    margin-bottom: 20px;
+  }
+  
+  .social-buttons {
     display: flex;
+    gap: 10px;
     justify-content: center;
-    align-items: center;
-    margin: 25px 0;
-    color: grey;
-
-}
-
-.signUpBtn {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-
-}
-
-.google-btn,
-.facebook-btn,
-.apple-btn {
-    color: white;
+  }
+  
+  .social-buttons button {
+    flex: 1;
     padding: 10px;
-    width: 100%;
-    border-radius: 6px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-}
-
-.google-btn {
-    background: #DB4437;
-}
-
-.facebook-btn {
-    background: #1877F2;
-}
-
-.apple-btn {
-    background: #000000;
-}
+    background: rgb(13, 110, 253);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  .google-btn {
+    background: rgb(13, 110, 253);
+  }
+  
+  .apple-btn {
+    background: rgb(52, 28, 147);
+  }
