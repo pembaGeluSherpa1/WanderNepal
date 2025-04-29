@@ -1,0 +1,88 @@
+.banner-container {
+    width: 100%;
+    background-color: rgb(18, 18, 18);
+    padding: 20px 0;
+  }
+  
+  .banner-slide {
+    width: 100%;
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    border-radius: 12px;
+    overflow: hidden;
+  }
+  
+  .banner-overlay {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
+    position: absolute;
+    bottom: 0;
+    width: 50%;
+    color: rgb(255, 255, 255);
+    padding: 30px;
+    backdrop-filter: blur(2px);
+  }
+  
+  .banner-overlay h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: rgb(0, 170, 255); 
+  }
+  
+  .banner-overlay p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: rgb(221, 221, 221);
+  }
+  
+  .swiper {
+    width: 100%;
+  }
+  
+  .swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  @media (max-width: 768px) {
+    .banner-slide {
+      height: 300px;
+    }
+  
+    .banner-overlay {
+      width: 70%;
+      padding: 20px;
+    }
+  
+    .banner-overlay h2 {
+      font-size: 1.5rem;
+    }
+  
+    .banner-overlay p {
+      font-size: 1rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .banner-slide {
+      height: 250px;
+    }
+  
+    .banner-overlay {
+      width: 90%;
+      padding: 15px;
+      backdrop-filter: blur(3px);
+    }
+  
+    .banner-overlay h2 {
+      font-size: 1.25rem;
+    }
+  
+    .banner-overlay p {
+      font-size: 0.9rem;
+    }
+  }
+  

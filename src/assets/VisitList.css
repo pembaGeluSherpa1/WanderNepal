@@ -1,0 +1,46 @@
+.Visit-Container{
+    display: flex;
+    margin-top: 70px;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+}
+.visit-section{
+    width: 80%;
+    height: 250px;
+    display: flex;
+    justify-content: space-between;
+    margin: 30px;
+    overflow: hidden;
+}
+.Box1{
+    width: 80%;
+}
+.Box1 img{
+    padding: 20px;
+    width: 400px;
+    height: 250px;   
+}
+.Box2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 50px;
+}
+.Box2 p{
+    font-size: 14px;
+}
+.Box3{
+    margin-left: 40px;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.Box3 p{
+    font-size: 14px;
+}
+.Book-btn{
+    width: 200px;
+}

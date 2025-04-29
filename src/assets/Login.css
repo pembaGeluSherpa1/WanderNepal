@@ -1,0 +1,116 @@
+.Login {
+  display: flex;
+  min-height: 100vh;
+  background: rgb(240, 244, 248);
+  font-family: Arial, sans-serif;
+}
+.left-side {
+  flex: 0.8;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  margin-top: 25px;
+  height: 700px;
+  width: 800px;
+}
+.Login-container {
+  width: 500px;
+  margin-top: 50px;
+  margin-left: 40px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgb(240, 244, 248);
+  font-family: Arial, sans-serif;
+}
+
+.left-contents{
+  position: relative;
+}
+
+form {
+  background: rgb(255, 255, 255); 
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+  width: 320px;
+  position: relative;
+}
+
+#Background-img {
+  width: 100%;
+  height: 600px;
+  position: absolute;
+}
+
+form h1 {
+  text-align: center;
+  color: rgb(70, 53, 220); 
+  margin-bottom: 5px;
+}
+
+form p {
+  text-align: center;
+  font-size: 14px;
+  color: rgb(85, 85, 85);
+  margin-bottom: 20px;
+}
+
+.user, .psw {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.user input, .psw input {
+  width: 100%;
+  padding: 10px 35px 10px 10px;
+  border: 1px solid rgb(204, 204, 204);
+  border-radius: 5px;
+  outline: none;
+}
+
+.user svg, .psw svg {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: rgb(13, 110, 253);
+  font-size: 20px;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: rgb(13, 110, 253); 
+  border: none;
+  color: white;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: 400ms all ease-in-out;
+}
+
+button:hover {
+  background-color: rgb(52, 28, 147); 
+}
+
+.remember-forget, .signn {
+  text-align: center;
+  font-size: 13px;
+  margin-top: 15px;
+  color: rgb(85, 85, 85);
+}
+
+.remember-forget a, .signn a {
+  color: rgb(13, 110, 253);
+  text-decoration: none;
+}
+
+.remember-forget a:hover, .signn a:hover {
+  color: rgb(242, 8, 71);
+  text-decoration: underline;
+}
