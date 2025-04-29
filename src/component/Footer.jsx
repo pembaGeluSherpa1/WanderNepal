@@ -9,7 +9,6 @@ function Footer(){
         <footer>
 
          <div className="footer-container">
-            {/* <div className="footer-body"> */}
             <div className="footer-about">
                 <h2 className="footerh2">About</h2>
                 <ul>
@@ -62,7 +61,6 @@ function Footer(){
             </div>
          </div>
             </footer>
-            {/* </div> */}
         </>
     )
 }

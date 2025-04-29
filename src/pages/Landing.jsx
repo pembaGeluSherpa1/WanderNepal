@@ -6,7 +6,9 @@ import Footer from "../component/Footer"
 
 export default function Landing(){
     return(<>
+    <Navbar/>
     <Banner/>
     <Testimonial/>
+    <Footer/>
     </>)
 }
