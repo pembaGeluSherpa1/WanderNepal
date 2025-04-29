@@ -9,6 +9,7 @@ import BookNow from "./pages/BookNow"
 import Navbar from "./component/Navbar"
 import PlaceDetail from "./component/PlacesDetail"
 import Footer from "./component/Footer"
+import AboutUs from "./pages/AboutUs"
 
 function App() {
 
@@ -21,11 +22,14 @@ function App() {
           <Route path="/signIn" element={<Login/>} />
           <Route path="/BookNow" element={<BookNow/>} />
           <Route path="/VisitList" element={<VisitList/>} />
+          <Route path="/About" element={<AboutUs/>} />
           <Route path="/BookNow" element={<BookNow/>} />
           <Route path="/places/:city/:placePath" element={<PlaceDetail />} />
+
         </Routes>
         <Footer/>
       </BrowserRouter>
+
 
     </>
   )

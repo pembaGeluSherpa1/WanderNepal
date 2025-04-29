@@ -1,11 +1,3 @@
-/* General Styles */
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: rgb(245, 245, 245);
-}
-
 h1 {
   color: rgb(0, 123, 255);
   text-align: center;
@@ -17,7 +9,6 @@ p {
   text-align: center;
 }
 
-/* Payment Container */
 .payment-Container {
   max-width: 600px;
   margin: 50px auto;
@@ -29,7 +20,6 @@ p {
   box-sizing: border-box;
 }
 
-/* Form Styles */
 .payment-Container form {
   margin-inline: auto;
 }
@@ -77,12 +67,10 @@ button:hover {
   background-color: rgb(35, 200, 73);
 }
 
-/* Input Group Styles */
 .Visitors, .Date-Visit, .Country, .Price {
   margin-bottom: 20px;
 }
 
-/* Option Styles */
 optgroup {
   font-weight: bold;
   color: rgb(0, 123, 255);
@@ -98,52 +86,45 @@ option:checked {
   color: white;
 }
 
-/* Responsive Styles */
 @media screen and (max-width: 768px) {
-  /* Payment Container */
   .payment-Container {
-      width: 90%; /* Make container width more responsive */
+      width: 90%;
       padding: 15px;
   }
 
-  /* Adjust Input Field Padding */
   input[type="Number"],
   input[type="Date"],
   select {
       padding: 10px;
   }
 
-  /* Button Adjustment */
   button {
       padding: 12px 18px;
   }
 
-  /* Heading Size */
   h1 {
       font-size: 22px;
       margin-bottom: 15px;
   }
   
-  /* Adjust Form Input for Smaller Screens */
+
   .Visitors, .Date-Visit, .Country, .Price {
-      margin-bottom: 15px; /* Reduce margin */
+      margin-bottom: 15px; 
   }
 
-  /* Adjust Select Option Padding */
   option {
       padding: 8px;
   }
 }
 
 @media screen and (max-width: 480px) {
-  /* Further Adjustments for Small Screens */
+
   .payment-Container {
       width: 100%;
       margin: 20px;
       padding: 10px;
   }
 
-  /* Button Size for Small Screens */
   button {
       font-size: 14px;
       padding: 10px;
@@ -155,7 +136,6 @@ option:checked {
       padding: 8px;
   }
   
-  /* Heading for Small Screens */
   h1 {
       font-size: 20px;
       margin-bottom: 12px;

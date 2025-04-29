@@ -34,7 +34,6 @@ const PlaceDetail = () => {
         </div>
 
         <div className="paymentContainer">
-          {/* Render the Payment component, passing `place` data as props */}
           <Payment placeData={place} />
         </div>
       </div>

@@ -22,7 +22,7 @@
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: flex-start;
     gap: 30px;
     padding: 20px 0;
 }
@@ -83,6 +83,21 @@
     font-weight: 600;
     color: rgb(41, 128, 185);
     margin-top: auto;
+}
+
+.loadMoreBtn {
+    margin: 10px auto;
+    padding: 8px 16px;
+    display: block;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.loadMoreBtn:hover {
+    background-color: #0056b3;
 }
 
 @media (max-width: 992px) {
