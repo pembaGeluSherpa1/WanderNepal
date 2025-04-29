@@ -1,17 +1,36 @@
 import "../assets/Navbar.css";
-import { Link } from "react-router-dom";
-import { useEffect, useState } from "react";
-import { FaUserCircle } from "react-icons/fa"; 
+import { Link, useNavigate } from "react-router-dom";
+import { useState, useEffect, useRef } from "react";
+import { FaUserCircle } from "react-icons/fa";
 
 export default function Navbar() {
-    const [isLoggedIn, setIsLoggedIn] = useState(false); 
-    const [dropdown, setDropdown] = useState(false);
+    const [dropdownOpen, setDropdownOpen] = useState(false);
+    const navigate = useNavigate();
 
-    
+    const profileRef = useRef(null);
 
     const toggleDropdown = () => {
-        setDropdown(!dropdown);
+        setDropdownOpen(!dropdownOpen);
     };
+
+    const handleLogout = () => {
+        setDropdownOpen(false);
+        navigate("/");
+    };
+
+    useEffect(() => {
+        const handleClickOutside = (event) => {
+            if (profileRef.current && !profileRef.current.contains(event.target)) {
+                setDropdownOpen(false);
+            }
+        };
+
+        document.addEventListener("mousedown", handleClickOutside);
+        
+        return () => {
+            document.removeEventListener("mousedown", handleClickOutside);
+        };
+    }, []);
 
     return (
         <nav className="navbar">
@@ -31,29 +50,21 @@ export default function Navbar() {
             </div>
 
             <div className="navbar-buttons">
-                {isLoggedIn ? (
-                    <div className="profile-menu">
-                        <FaUserCircle size={30} className="profile-icon" onClick={toggleDropdown} />
-                        {dropdown && (
-                            <div className="dropdown">
-                                <Link to="/history">History</Link>
-                                <Link to="/visitlist">Visit List</Link>
-                                <Link to="/profile">Profile</Link>
-                                <Link to="/privacy">Privacy Settings</Link>
-                                <Link to="/logout">Logout</Link>
-                            </div>
-                        )}
-                    </div>
-                ) : (
-                    <>
-                        <Link to="/signIn">
-                            <button className="signin-btn">Sign In</button>
-                        </Link>
-                        <Link to="/signUp">
-                            <button className="signup-btn">Sign Up</button>
-                        </Link>
-                    </>
-                )}
+                <div 
+                    className="profile-menu" 
+                    ref={profileRef}
+                >
+                    <FaUserCircle size={30} className="profile-icon" onClick={toggleDropdown} />
+                    {dropdownOpen && (
+                        <div className="dropdown">
+                            <Link to="/history">History</Link>
+                            <Link to="/visitlist">Visit List</Link>
+                            <Link to="/profile">Profile</Link>
+                            <Link to="/privacy">Privacy Settings</Link>
+                            <button onClick={handleLogout} className="signin-btn">Logout</button>
+                        </div>
+                    )}
+                </div>
             </div>
         </nav>
     );

@@ -1,86 +1,85 @@
-import "../assets/Login.css"
-import { CiLock , CiMail} from "react-icons/ci";
+import "../assets/Login.css";
+import { CiLock, CiMail } from "react-icons/ci";
+import { useState } from "react";
+import { useNavigate } from "react-router-dom"; // for redirect
 
-function Login(){
-    return(
-        <>
-        <div className="Login">
-            <div className="left-side">
-                 <img src="https://img.freepik.com/free-photo/vertical-shot-lochawa-la-khang-monastery-kalpa-himachal-pradesh-cold-winter_181624-23562.jpg?semt=ais_hybrid&w=740" alt="Background" id="Background-img"/>
-                <div className="left-contents">
-                    <h2>Wander Freely,</h2>
-                    <h2>Experience Deeply.</h2>
-                </div>
-            </div>
+function Login() {
+    const [username, setUsername] = useState("");
+    const [password, setPassword] = useState("");
+    const [error, setError] = useState("");
+    const navigate = useNavigate(); // to redirect
+
+    const handleSubmit = async (e) => {
+        e.preventDefault();
         
-        <div className="Login-container">
-            <form action="">
-                <h1>Login</h1>
-                <p>Your gateway to Wander Nepal Pass</p>
+        try {
+            const response = await fetch("../data/user.json");
+            const userData = await response.json();
+            
+            if (username === userData.username && password === userData.password) {
+                console.log("Login successful");
+                setError("");
+                navigate("/"); // redirect to homepage after login
+            } else {
+                setError("Invalid username or password");
+            }
+        } catch (error) {
+            console.error("Error fetching user data:", error);
+            setError("An error occurred. Please try again later.");
+        }
+    };
 
-                <div className="user">
-                <label><input type="Username" placeholder="Username" /></label>
-                <CiMail />
-                </div>
+    return (
+        <>
+            <img 
+                src="https://img.freepik.com/free-photo/vertical-shot-lochawa-la-khang-monastery-kalpa-himachal-pradesh-cold-winter_181624-23562.jpg?semt=ais_hybrid&w=740" 
+                alt="Background" 
+                id="Background-img" 
+            />
+            <div className="Login-container">
+                <form onSubmit={handleSubmit}>
+                    <h1>Login</h1>
+                    <p>Your gateway to Wander Nepal Pass</p>
 
-                <div className="psw">
-                <label><input type="Password" placeholder="Password"/></label>
-                <CiLock />
-                </div>
+                    <div className="user">
+                        <label>
+                            <input 
+                                type="text" 
+                                placeholder="Username"
+                                value={username}
+                                onChange={(e) => setUsername(e.target.value)}
+                            />
+                        </label>
+                        <CiMail />
+                    </div>
 
-                <button type="Submit">Login</button>
+                    <div className="psw">
+                        <label>
+                            <input 
+                                type="password" 
+                                placeholder="Password"
+                                value={password}
+                                onChange={(e) => setPassword(e.target.value)}
+                            />
+                        </label>
+                        <CiLock />
+                    </div>
 
-                <div className="remember-forget">
-                    <p>Don't remember password?<a href="#">Forgot Password</a></p>
-                </div>
+                    <button type="submit">Login</button>
 
-                <div className="signn">
-                <p>Need to create an account?<a href="#">Sign-up</a></p>
-                </div>
-            </form>
-        </div> 
-</div>
+                    {error && <div className="error">{error}</div>}
 
-        {/* <div className="auth-page">
-  <div className="left-side">
-    <div className="overlay-content">
-      <h2>Capturing Moments,</h2>
-      <h2>Creating Memories</h2>
-    </div>
-  </div>
+                    <div className="remember-forget">
+                        <p>Don't remember password? <a href="#">Forgot Password</a></p>
+                    </div>
 
-  <div className="right-side">
-    <form action="">
-      <h1>Login</h1>
-      <p>New here? <a href="#">Create an account</a></p>
-
-      <div className="input-single">
-        <input type="text" placeholder="Username" />
-      </div>
-
-      <div className="input-single">
-        <input type="password" placeholder="Password" />
-      </div>
-
-      <div className="checkbox-group">
-        <label><input type="checkbox" /> Remember Me</label>
-      </div>
-
-      <button type="submit">Login</button>
-
-      <div className="divider">or continue with</div>
-
-      <div className="social-buttons">
-        <button className="google-btn">Google</button>
-        <button className="apple-btn">Apple</button>
-      </div>
-    </form>
-  </div>
-</div> */}
-
-
-
+                    <div className="signn">
+                        <p>Need to create an account? <a href="#">Sign-up</a></p>
+                    </div>
+                </form>
+            </div>
         </>
-    )
+    );
 }
+
 export default Login;
