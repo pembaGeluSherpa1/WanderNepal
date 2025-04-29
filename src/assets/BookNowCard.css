@@ -1,0 +1,140 @@
+/* Reset default */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.bookMainContainer {
+    margin-top: 100px;
+    padding: 20px;
+}
+
+.cityTitle {
+    font-size: 36px;
+    font-weight: 800;
+    margin-bottom: 30px;
+    text-align: center;
+    color: #2c3e50;
+}
+
+.mainPlace {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+/* Single Place Card */
+.placeCard {
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+
+.placeCard:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
+}
+
+.placesImage {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+}
+
+.bookImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.bookImage:hover {
+    transform: scale(1.05);
+}
+
+.bookDetail {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1;
+}
+
+.detailInfo {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 12px;
+    height: 120px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* Location Text */
+.bookNowLocation {
+    font-size: 16px;
+    font-weight: 600;
+    color: #2980b9;
+    margin-top: auto;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+    .mainPlace {
+        gap: 20px;
+        justify-content: center;
+    }
+
+    .placeCard {
+        width: 250px;
+    }
+
+    .cityTitle {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .mainPlace {
+        flex-direction: column;
+        align-items: center;
+        padding: 0 20px;
+    }
+
+    .placeCard {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .cityTitle {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 480px) {
+    .cityTitle {
+        font-size: 24px;
+    }
+
+    .bookDetail {
+        padding: 10px;
+    }
+
+    .detailInfo {
+        font-size: 13px;
+    }
+
+    .bookNowLocation {
+        font-size: 14px;
+    }
+}

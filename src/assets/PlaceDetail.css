@@ -1,0 +1,49 @@
+.placeDetailContainer {
+    max-width: 900px;
+    margin: 80px auto;
+    padding: 20px;
+    border-radius: 12px;
+    background-color: #f9f9f9;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+  }
+  
+  .placeDetailContainer .placeName {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .detailImage{
+    width: 400px;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 20px;
+  }
+  
+  .placeDetailContainer p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 16px;
+    color: #555;
+  }
+  
+  .placeDetailContainer ul {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 20px;
+  }
+  
+  .placeDetailContainer ul li {
+    background-color: #fff;
+    padding: 8px 12px;
+    border-radius: 6px;
+    margin-bottom: 6px;
+    border: 1px solid #ddd;
+  }
+  
+  .placeDetailContainer iframe {
+    border: none;
+    border-radius: 8px;
+    margin-top: 20px;
+  }

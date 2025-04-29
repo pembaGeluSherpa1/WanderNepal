@@ -6,15 +6,19 @@
 
 /* Navbar */
 nav.navbar {
+    top: 0;
+    left: 0;
+    right: 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
-    position:fixed;
+    position: fixed;
     width: 100%;
     padding: 15px 30px;
     background-color: rgb(248, 249, 250);
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
 }
 
 .navbar-logo a {
@@ -43,6 +47,7 @@ nav.navbar {
     color: rgb(0, 123, 255);
 }
 
+/* Search input */
 .navbar-search input {
     padding: 8px 14px;
     border-radius: 20px;
@@ -57,9 +62,16 @@ nav.navbar {
     width: 250px;
 }
 
+/* Buttons and Profile */
 .navbar-buttons {
     display: flex;
+    align-items: center;
     gap: 12px;
+}
+
+.signBtn {
+    display: flex;
+    gap: 10px;
 }
 
 .signin-btn,
@@ -108,7 +120,7 @@ nav.navbar {
     transform: scale(1.1);
 }
 
-/* Dropdown */
+/* Dropdown Menu */
 .dropdown {
     position: absolute;
     top: 40px;
@@ -123,15 +135,21 @@ nav.navbar {
     z-index: 100;
 }
 
-.dropdown a {
+.dropdown a, 
+.dropdown button {
     padding: 10px 15px;
     text-decoration: none;
     color: rgb(51, 51, 51);
     font-size: 16px;
     transition: background-color 0.2s;
+    border: none;
+    background: none;
+    text-align: left;
+    width: 100%;
 }
 
-.dropdown a:hover {
+.dropdown a:hover, 
+.dropdown button:hover {
     background-color: rgb(241, 241, 241);
 }
 
@@ -140,12 +158,26 @@ nav.navbar {
     nav.navbar {
         flex-direction: column;
         align-items: flex-start;
-        gap: 15px;
+        gap: 10px;
+        padding: 15px 20px;
     }
 
     .navbar-links {
         flex-direction: column;
+        width: 100%;
         gap: 15px;
+    }
+
+    .navbar-links li {
+        width: 100%;
+    }
+
+    .navbar-links li a {
+        font-size: 20px;
+    }
+
+    .navbar-search {
+        width: 100%;
     }
 
     .navbar-search input {
@@ -154,6 +186,11 @@ nav.navbar {
 
     .navbar-buttons {
         width: 100%;
-        justify-content: space-around;
+        justify-content: flex-start;
+        gap: 15px;
+    }
+
+    .profile-menu {
+        margin-top: 10px;
     }
 }

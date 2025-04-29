@@ -10,6 +10,8 @@ import { BrowserRouter, Route, Routes } from "react-router"
 import Landing from "./pages/Landing"
 import BookNow from "./pages/BookNow"
 import Navbar from "./component/Navbar"
+import VisitList from "./component/VisitList"
+import PlaceDetail from "./component/PlacesDetail"
 
 function App() {
 
@@ -21,9 +23,9 @@ function App() {
           <Route path="/" element={<Landing/>} />
           <Route path="/signIn" element={<Login/>} />
           <Route path="/BookNow" element={<BookNow/>} />
-          {/* <VisitList /> */}
-          {/* <Testimonial /> */}
-          {/* <SignUp /> */}
+          <Route path="/VisitList" element={<VisitList/>} />
+          <Route path="/BookNow" element={<BookNow/>} />
+          <Route path="/places/:city/:placePath" element={<PlaceDetail />} />
         </Routes>
         <Footer />
       </BrowserRouter>
