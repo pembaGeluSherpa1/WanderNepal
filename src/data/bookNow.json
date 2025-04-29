@@ -10,13 +10,6 @@
             "path": "/kathmandu/kathmanduDurbarSquare"
           },
           {
-            "id": 2,
-            "placeName": "National Museum, Chauni, Kathmandu",
-            "description": "The oldest museum in Nepal featuring art, artifacts, and history exhibits. Closed on Tuesdays and public holidays.",
-            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Nepal.Museum.JPG/330px-Nepal.Museum.JPG",
-            "path": "/kathmandu/nationalMuseumChauni"
-          },
-          {
             "id": 3,
             "placeName": "Patan Durbar Square including Patan Museum",
             "description": "Ancient royal palace complex full of temples and the renowned Patan Museum. UNESCO World Heritage Site.",
@@ -64,13 +57,6 @@
             "description": "Sacred Hindu temple complex dedicated to Lord Shiva, located on the Bagmati River bank.",
             "image": "https://www.acethehimalaya.com/wp-content/uploads/2024/10/pashupatinath-temple.jpg",
             "path": "/kathmandu/pashupatinathTemple"
-          },
-          {
-            "id": 10,
-            "placeName": "Changunarayan Temple",
-            "description": "Nepal's oldest Hindu temple, renowned for its intricate sculptures and beautiful woodwork. UNESCO site.",
-            "image": "https://www.bhaktapur.com/wp-content/uploads/2020/03/changu_narayan_temple.jpg",
-            "path": "/kathmandu/changunarayanTemple"
           }
         ]
       },
@@ -145,13 +131,6 @@
             "description": "The birthplace of Lord Buddha, a UNESCO World Heritage Site, and a major pilgrimage destination for Buddhists.",
             "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/BRP_Lumbini_Mayadevi_temple.jpg/500px-BRP_Lumbini_Mayadevi_temple.jpg",
             "path": "/Lumbini/Lumbini"
-          },
-          {
-            "id": 2,
-            "placeName": "LumbiniMuseum",
-            "description": "Museum showcasing the history of Buddha's birth and life, with exhibits on Buddhist culture.",
-            "image": "https://cdn.elebase.io/173fe953-8a63-4a8a-8ca3-1bacb56d78a5/a00983a0-9883-41bb-a6d2-cc54298456bd-museum-cover.jpg?q=90",
-            "path": "/Lumbini/LumbiniMuseum"
           }
         ]
       },

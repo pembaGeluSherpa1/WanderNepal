@@ -10,6 +10,9 @@ body {
     color: #333;
 }
 
+.aboutMain{
+    margin-top: 60px;
+}
 
 .about-hero {
     background-image: url('https://trekkingexperts.com/wp-content/uploads/2020/12/kathmandu-valley-thumb.jpg'); 

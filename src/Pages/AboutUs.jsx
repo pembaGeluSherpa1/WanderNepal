@@ -2,7 +2,7 @@ import "../assets/AboutUs.css"
 function AboutUs() {
     return (
         <>
-
+<div className="aboutMain">
             <section className="about-hero">
                 <div className="hero-content">
                     <h1>Wander Nepal Pass</h1>
@@ -20,7 +20,7 @@ function AboutUs() {
                     <p>Our goal is simple to promote tourism, reduce manual processes, and bring the convenience of modern technology into the heart of Nepal's travel industry. Wander Nepal Pass envisions a future where exploring Nepal is easier, greener, and entirely digital enhancing every journey from planning to discovery.</p>
                 </div>
             </section>
-
+</div>
         </>
     )
 }

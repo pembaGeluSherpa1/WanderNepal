@@ -1,14 +1,12 @@
-import Navbar from "../component/Navbar"
 import Banner from "../component/Banner"
+import Recommend from "../component/Recommend"
 import Testimonial from "../component/Testimonial"
-import Footer from "../component/Footer"
 
 
 export default function Landing(){
     return(<>
-    <Navbar/>
     <Banner/>
+    <Recommend/>
     <Testimonial/>
-    <Footer/>
     </>)
 }
