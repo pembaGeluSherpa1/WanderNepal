@@ -1,7 +1,7 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay } from 'swiper/modules';
 import 'swiper/css';
-import '../assets/Banner.css'; // Your custom styling
+import '../assets/Banner.css';
 
 export default function Banner() {
   return (

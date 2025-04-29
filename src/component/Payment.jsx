@@ -4,7 +4,7 @@ import { jsPDF } from "jspdf";
 import '../assets/Payment.css';
 
 const Payment = ({ placeData }) => {
-  const [visitorCount, setVisitorCount] = useState(1);
+  const [visitorCount, setVisitorCount] = useState();
   const [country, setCountry] = useState('Saarc');
   const [totalPrice, setTotalPrice] = useState();
   const [formSubmitted, setFormSubmitted] = useState(false); 
@@ -77,14 +77,13 @@ const Payment = ({ placeData }) => {
               type="number" 
               value={visitorCount} 
               onChange={(e) => setVisitorCount(Number(e.target.value))} 
-              min="1" 
             />
           </div>
 
-          <div className="Date-Visit">
+          {/* <div className="Date-Visit">
             <label>Date:</label>
             <input type="date" name="date" />
-          </div>
+          </div> */}
 
           <div className="Country">
             <label htmlFor="Country">Select your Country:</label>

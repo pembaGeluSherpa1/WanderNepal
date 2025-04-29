@@ -133,6 +133,38 @@
             "image": "https://farm2.staticflickr.com/1350/5116691499_5c18022cf4_z.jpg",
             "path": "/pokhara/pokharaRegionalMuseum"
           }
+          
         ]
+      },
+      {
+        "city": "Lumbini",
+        "places": [
+          {
+            "id": 1,
+            "placeName": "Lumbini",
+            "description": "The birthplace of Lord Buddha, a UNESCO World Heritage Site, and a major pilgrimage destination for Buddhists.",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/BRP_Lumbini_Mayadevi_temple.jpg/500px-BRP_Lumbini_Mayadevi_temple.jpg",
+            "path": "/Lumbini/Lumbini"
+          },
+          {
+            "id": 2,
+            "placeName": "LumbiniMuseum",
+            "description": "Museum showcasing the history of Buddha's birth and life, with exhibits on Buddhist culture.",
+            "image": "https://cdn.elebase.io/173fe953-8a63-4a8a-8ca3-1bacb56d78a5/a00983a0-9883-41bb-a6d2-cc54298456bd-museum-cover.jpg?q=90",
+            "path": "/Lumbini/LumbiniMuseum"
+          }
+        ]
+      },
+      {
+        "city": "Chitwan",
+        "places": [
+          {
+            "id": 1,
+            "placeName": "ChitwanNationalPark",
+            "description": "A UNESCO World Heritage Site known for its wildlife, including rhinoceroses, tigers, and elephants.",
+            "image": "https://media.greenvalleynepaltreks.com/uploads/fullbanner/chitwan-national-park.webp",
+            "path": "/Chitwan/Chitwan National Park"
+          }
+        ] 
       }
   ]
