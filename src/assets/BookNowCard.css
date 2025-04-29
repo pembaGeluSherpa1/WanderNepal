@@ -5,8 +5,9 @@
 }
 
 .bookMainContainer {
-    margin-top: 100px;
+    margin-top: 70px;
     padding: 20px;
+    width: 100%;
 }
 
 .cityTitle {
@@ -14,20 +15,20 @@
     font-weight: 800;
     margin-bottom: 30px;
     text-align: center;
-    color: #2c3e50;
+    color: rgb(44, 62, 80);
 }
 
 .mainPlace {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    gap: 30px;
     justify-content: center;
+    gap: 30px;
     padding: 20px 0;
 }
 
 .placeCard {
-    background-color: #fff;
+    background-color: rgb(255, 255, 255);
     border-radius: 12px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     overflow: hidden;
@@ -37,7 +38,6 @@
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     cursor: pointer;
 }
-
 
 .placeCard:hover {
     transform: translateY(-5px);
@@ -71,7 +71,7 @@
 
 .detailInfo {
     font-size: 14px;
-    color: #555;
+    color: rgb(85, 85, 85);
     margin-bottom: 12px;
     height: 120px;
     overflow: hidden;
@@ -81,16 +81,11 @@
 .bookNowLocation {
     font-size: 16px;
     font-weight: 600;
-    color: #2980b9;
+    color: rgb(41, 128, 185);
     margin-top: auto;
 }
 
 @media (max-width: 992px) {
-    .mainPlace {
-        gap: 20px;
-        justify-content: center;
-    }
-
     .placeCard {
         width: 250px;
     }

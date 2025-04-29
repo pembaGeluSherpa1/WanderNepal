@@ -7,14 +7,15 @@ import { BrowserRouter, Route, Routes } from "react-router"
 import Landing from "./pages/Landing"
 import BookNow from "./pages/BookNow"
 import Navbar from "./component/Navbar"
-import Payment from "./component/Payment"
 import PlaceDetail from "./component/PlacesDetail"
+import Footer from "./component/Footer"
 
 function App() {
 
   return (
     <>
       <BrowserRouter>
+      <Navbar/>
         <Routes>
           <Route path="/" element={<Landing/>} />
           <Route path="/signIn" element={<Login/>} />
@@ -23,6 +24,7 @@ function App() {
           <Route path="/BookNow" element={<BookNow/>} />
           <Route path="/places/:city/:placePath" element={<PlaceDetail />} />
         </Routes>
+        <Footer/>
       </BrowserRouter>
 
     </>

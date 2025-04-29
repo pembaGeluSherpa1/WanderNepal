@@ -2,11 +2,12 @@ import "../assets/Navbar.css";
 import { Link, useNavigate } from "react-router-dom";
 import { useState, useEffect, useRef } from "react";
 import { FaUserCircle } from "react-icons/fa";
+import { FaBars, FaTimes } from "react-icons/fa";
 
 export default function Navbar() {
     const [dropdownOpen, setDropdownOpen] = useState(false);
+    const [menuOpen, setMenuOpen] = useState(false);
     const navigate = useNavigate();
-
     const profileRef = useRef(null);
 
     const toggleDropdown = () => {
@@ -18,6 +19,10 @@ export default function Navbar() {
         navigate("/");
     };
 
+    const toggleMenu = () => {
+        setMenuOpen(!menuOpen);
+    };
+
     useEffect(() => {
         const handleClickOutside = (event) => {
             if (profileRef.current && !profileRef.current.contains(event.target)) {
@@ -26,7 +31,7 @@ export default function Navbar() {
         };
 
         document.addEventListener("mousedown", handleClickOutside);
-        
+
         return () => {
             document.removeEventListener("mousedown", handleClickOutside);
         };
@@ -38,11 +43,14 @@ export default function Navbar() {
                 <Link to="/">WanderNepal</Link>
             </div>
 
-            <ul className="navbar-links">
-                <li><Link to="/">Home</Link></li>
-                <li><Link to="/BookNow">Book Now</Link></li>
-                <li><Link to="/About">About Us</Link></li>
-                <li><Link to="/Contact">Contact</Link></li>
+            <div className="burger" onClick={toggleMenu}>
+                {menuOpen ? <FaTimes/> : <FaBars size={15} />}
+            </div>
+
+            <ul className={`navbar-links ${menuOpen ? "active" : ""}`}>
+                <li><Link to="/" onClick={() => setMenuOpen(false)}>Home</Link></li>
+                <li><Link to="/BookNow" onClick={() => setMenuOpen(false)}>Book Now</Link></li>
+                <li><Link to="/About" onClick={() => setMenuOpen(false)}>About Us</Link></li>
             </ul>
 
             <div className="navbar-search">
@@ -60,7 +68,6 @@ export default function Navbar() {
                             <Link to="/history">History</Link>
                             <Link to="/visitlist">Visit List</Link>
                             <Link to="/profile">Profile</Link>
-                            <Link to="/privacy">Privacy Settings</Link>
                             <button onClick={handleLogout} className="signin-btn">Logout</button>
                         </div>
                     )}

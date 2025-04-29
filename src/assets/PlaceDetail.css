@@ -6,44 +6,103 @@
     background-color: #f9f9f9;
     box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
     font-family: Arial, sans-serif;
-  }
-  
-  .placeDetailContainer .placeName {
+}
+
+.placeDetailContainer .placeName {
     text-align: center;
     color: #333;
     margin-bottom: 20px;
-  }
-  
-  .detailImage{
-    width: 400px;
-    height: auto;
-    border-radius: 8px;
+}
+
+.detailImage, .map {
+    width: 100%;
+    height: 100%;
+    max-width: 400px;
+    max-height: 400px;
     margin-bottom: 20px;
-  }
-  
-  .placeDetailContainer p {
+    border-radius: 8px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.placeDetailContainer p {
     font-size: 16px;
     line-height: 1.6;
     margin-bottom: 16px;
     color: #555;
-  }
-  
-  .placeDetailContainer ul {
+}
+
+.placeDetailContainer ul {
     list-style-type: none;
     padding: 0;
     margin-bottom: 20px;
-  }
-  
-  .placeDetailContainer ul li {
+}
+
+.placeDetailContainer ul li {
     background-color: #fff;
     padding: 8px 12px;
     border-radius: 6px;
     margin-bottom: 6px;
     border: 1px solid #ddd;
-  }
-  
-  .placeDetailContainer iframe {
+}
+
+.placeDetailContainer iframe {
     border: none;
     border-radius: 8px;
     margin-top: 20px;
-  }
+}
+
+.mainPlace {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+@media screen and (min-width: 768px) {
+    .mainPlace {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 20px;
+    }
+
+    .placeDetailContainer {
+        width: 60%;
+    }
+
+    .paymentContainer {
+        width: 35%;
+        margin-left: 20px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .placeDetailContainer {
+        padding: 15px;
+        margin: 20px;
+    }
+
+    .placeDetailContainer .placeName {
+        font-size: 24px;
+    }
+
+    .placeDetailContainer p {
+        font-size: 14px;
+    }
+
+    .placeDetailContainer ul li {
+        font-size: 14px;
+    }
+
+    .detailImage, .map {
+        width: 90%;
+        max-width: 100%;
+    }
+
+    .mainPlace {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+}
