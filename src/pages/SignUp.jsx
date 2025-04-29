@@ -1,69 +1,91 @@
 import { DiApple } from "react-icons/di";
-import {FaGoogle,FaFacebook} from "react-icons/fa";
+import { FaGoogle, FaFacebook } from "react-icons/fa";
 import "../assets/SignUp.css";
-function SignUp(){
-    return (
-        <>
-      
-       <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5ywSSrzNkOe3PwSNi6JZ7FTR4Kh-r_nQaow&s" alt="image" id="backgroundimg"/>
+
+function SignUp() {
+  return (
+    <div className="auth-page">
+
     
-
-      <div className="signup-container">
-
-       <form className="SignUpForm" action="">
-
-       <h1 > Create an Account</h1>
-        
-        <p id="SignUpP"> Create an account to get started</p>
-        
-
-        <div className="form-group">
-
-       
-        <div className="input">
-        <label for="email"></label>
-        <input type="email" id="email" name="email" required placeholder="Your email address"></input>
-       </div>
-
-       <div className="input">
-        <label for="password"></label>
-        <input type ="password" id="password1" name="password" required placeholder ="Create a password"/>
+      <div className="left-side">
+        <img
+          src="https://cdn.pixabay.com/photo/2019/12/13/08/21/gokyo-ri-4692458_1280.jpg"
+          alt="Background"
+          className="background-img"
+        />
+        <div className="overlay-content">
+          <h2>Welcome!</h2>
+          <p>Join us and explore the beauty of Nepal.</p>
         </div>
+      </div>
 
+    
+      <div className="right-side">
+        <form>
+          <h1>Create an Account</h1>
+          <p>Create an account to get started</p>
 
-        <div className="input">
-        <label for="oldpassword"></label>
-        <input type ="password" id="password2" name="password" required placeholder ="verify password"/>
-        </div>
-
-        <div className="checkbox">
-          <input type="checkbox" id="TermsandConditions" name="Terms and Conditions"/> 
-           <label for="Terms and Conditions">I agree with terms and conditions</label>
-           </div>
-
-          <button type="submit" className="btn">Sign Up</button>
-
+          <div className="input-single">
+            <input
+              type="email"
+              id="email"
+              name="email"
+              required
+              placeholder="Your email address"
+            />
           </div>
 
-           <div class="divider">
-            <span id="signUpOr">Or</span>
-           </div>
+          <div className="input-single">
+            <input
+              type="password"
+              id="password1"
+              name="password"
+              required
+              placeholder="Create a password"
+            />
+          </div>
 
+          <div className="input-single">
+            <input
+              type="password"
+              id="password2"
+              name="password"
+              required
+              placeholder="Verify password"
+            />
+          </div>
 
-           <div className="signUpBtn">
-           <button type="button" className="apple-btn"> <span id="signUpLogo"><DiApple /></span>Continue with Apple</button>
-           <button type="button" className ="google-btn"> <span id="signUpLogo"><FaGoogle /></span>Continue with Google</button>
-           <button type="button" className ="facebook-btn"><span id="signUpLogo"><FaFacebook /></span>Continue with Facebook</button>
-         </div>
+          <div className="checkbox-group">
+            <input type="checkbox" id="terms" name="terms" />
+            <label htmlFor="terms"> I agree with terms and conditions</label>
+          </div>
 
+          <button type="submit">Sign Up</button>
 
-       </form>
-     
+          <div className="divider">Or</div>
+
+          <div className="social-buttons">
+            <button type="button" className="google-btn">
+              <FaGoogle style={{ marginRight: "8px" }} />
+              Google
+            </button>
+            <button type="button" className="apple-btn">
+              <DiApple style={{ marginRight: "8px" }} />
+              Apple
+            </button>
+            <button type="button" className="google-btn">
+              <FaFacebook style={{ marginRight: "8px" }} />
+              Facebook
+            </button>
+          </div>
+
+          <p>
+            Already registered? <a href="#">Log in</a>
+          </p>
+        </form>
       </div>
-          
-
-        </>
-    )
+    </div>
+  );
 }
 
-      export default SignUp; 
+export default SignUp;

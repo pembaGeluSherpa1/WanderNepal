@@ -57,7 +57,7 @@ function Footer(){
             </div>
 
             <div className="footercopyright">
-                <p><span><MdCopyright/></span> 2024 Brand, Inc . Privacy . Terms.Sitemap </p>
+                <p><span><MdCopyright/></span> 2025 Wander Nepal Pass. Made with love for Explorers.</p>
             </div>
          </div>
             </footer>
