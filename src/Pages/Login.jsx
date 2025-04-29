@@ -1,13 +1,13 @@
 import "../assets/Login.css";
 import { CiLock, CiMail } from "react-icons/ci";
 import { useState } from "react";
-import { useNavigate } from "react-router-dom"; // for redirect
+import { useNavigate } from "react-router-dom";
 
 function Login() {
     const [username, setUsername] = useState("");
     const [password, setPassword] = useState("");
     const [error, setError] = useState("");
-    const navigate = useNavigate(); // to redirect
+    const navigate = useNavigate(); 
 
     const handleSubmit = async (e) => {
         e.preventDefault();
@@ -19,7 +19,7 @@ function Login() {
             if (username === userData.username && password === userData.password) {
                 console.log("Login successful");
                 setError("");
-                navigate("/"); // redirect to homepage after login
+                navigate("/");
             } else {
                 setError("Invalid username or password");
             }

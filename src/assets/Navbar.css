@@ -4,7 +4,6 @@
     box-sizing: border-box;
 }
 
-/* Navbar */
 nav.navbar {
     top: 0;
     left: 0;
@@ -28,7 +27,6 @@ nav.navbar {
     color: rgb(0, 51, 255);
 }
 
-/* Navbar Links */
 .navbar-links {
     list-style: none;
     display: flex;
@@ -47,7 +45,6 @@ nav.navbar {
     color: rgb(0, 123, 255);
 }
 
-/* Search input */
 .navbar-search input {
     padding: 8px 14px;
     border-radius: 20px;
@@ -62,7 +59,6 @@ nav.navbar {
     width: 250px;
 }
 
-/* Buttons and Profile */
 .navbar-buttons {
     display: flex;
     align-items: center;
@@ -103,7 +99,6 @@ nav.navbar {
     background-color: rgb(30, 126, 52);
 }
 
-/* Profile Icon */
 .profile-menu {
     position: relative;
     display: flex;
@@ -120,7 +115,6 @@ nav.navbar {
     transform: scale(1.1);
 }
 
-/* Dropdown Menu */
 .dropdown {
     position: absolute;
     top: 40px;
@@ -153,7 +147,6 @@ nav.navbar {
     background-color: rgb(241, 241, 241);
 }
 
-/* Mobile Responsive */
 @media screen and (max-width: 768px) {
     nav.navbar {
         flex-direction: column;

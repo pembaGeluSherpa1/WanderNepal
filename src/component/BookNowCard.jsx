@@ -1,6 +1,6 @@
 import "../assets/BookNowCard.css";
 import Places from "../data/bookNow.json";
-import { Link } from "react-router-dom"; // Make sure you're using react-router
+import { Link } from "react-router-dom";
 
 export default function BookNowCard() {
   console.log(Places);
